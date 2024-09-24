@@ -250,7 +250,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -271,7 +271,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -295,7 +295,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -321,7 +321,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -353,7 +353,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -398,7 +398,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _fileSaver(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -422,7 +422,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _fileSaver(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -449,7 +449,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _fileSaver(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -483,7 +483,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                                   _pickedFilePath = await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: _pickedFilePath.toString());
@@ -503,7 +503,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       FileMetadata? result =
                                           await _fileMetadata(params);
 
-                                      if (mounted) {
+                                       if (mounted && context.mounted)  {
                                         callSnackBar(
                                             context: context,
                                             text: result.toString());
@@ -537,7 +537,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                                   _pickedFilePath = await _filePicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: _pickedFilePath.toString());
@@ -558,7 +558,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       String? result =
                                           await _cacheFilePathFromPath(params);
 
-                                      if (mounted) {
+                                       if (mounted && context.mounted)  {
                                         callSnackBar(
                                             context: context,
                                             text: result.toString());
@@ -589,7 +589,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   _pickedDirectoryPath =
                                       await _directoryPicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: _pickedDirectoryPath.toString());
@@ -611,7 +611,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<DocumentFile>? result =
                                       await _directoryDocumentsPicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result
@@ -644,7 +644,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<DocumentFile>? result =
                                       await _directoryDocumentsPicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result
@@ -677,7 +677,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<String>? result =
                                       await _fileSaver(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result.toString());
@@ -712,7 +712,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   _pickedDirectoryPath =
                                       await _directoryPicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: _pickedDirectoryPath.toString());
@@ -745,7 +745,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       .first;
                                   setState(() {});
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result
@@ -776,7 +776,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   List<DocumentFile>? result =
                                       await _directoryDocumentsPicker(params);
 
-                                  if (mounted) {
+                                   if (mounted && context.mounted)  {
                                     callSnackBar(
                                         context: context,
                                         text: result
@@ -799,7 +799,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                             String? result = await _cancelActions(params);
 
-                            if (mounted) {
+                             if (mounted && context.mounted)  {
                               callSnackBar(
                                   context: context, text: result.toString());
                             }
@@ -819,7 +819,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               persistedUris = result;
                             });
 
-                            if (mounted) {
+                             if (mounted && context.mounted)  {
                               callSnackBar(
                                   context: context, text: result.toString());
                             }
@@ -842,7 +842,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       bool? result =
                                           await _permissionStatus(params);
 
-                                      if (mounted) {
+                                       if (mounted && context.mounted)  {
                                         callSnackBar(
                                             context: context,
                                             text: result.toString());
@@ -868,7 +868,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       bool? result =
                                           await _permissionStatus(params);
 
-                                      if (mounted) {
+                                       if (mounted && context.mounted)  {
                                         callSnackBar(
                                             context: context,
                                             text: result.toString());

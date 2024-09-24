@@ -4,20 +4,22 @@ version: 2.2.4
 homepage: https://github.com/chaudharydeepanshu/pick_or_save
 repository: https://github.com/chaudharydeepanshu/pick_or_save
 issue_tracker: https://github.com/chaudharydeepanshu/pick_or_save/issues
+publish_to: none
 
 environment:
-  sdk: '>=2.18.0 <3.0.0'
-  flutter: ">=2.5.0"
+  sdk: '>=3.5.0 <4.0.0'
+  flutter: ">=3.24.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.1.8
+  plugin_platform_interface:
+    git: https://github.com/kumsumit/plugin_platform_interface.git
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

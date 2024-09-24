@@ -2,14 +2,14 @@ group 'com.deepanshuchaudhary.pick_or_save'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.9.0'
+    ext.kotlin_version = '2.0.20'
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.2'
+        classpath 'com.android.tools.build:gradle:8.6.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -29,15 +29,15 @@ android {
         namespace 'com.deepanshuchaudhary.pick_or_save'
     }
 
-    compileSdkVersion 34
+    compileSdk 35
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 
     sourceSets {
@@ -45,14 +45,14 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 34
+        minSdk 21
+        targetSdk 35
     }
 }
 
 dependencies {
-    implementation 'androidx.documentfile:documentfile:1.0.1'
+    implementation ' com.lazygeniouz:dfc:1.0.8'
 
-    def activity_version = "1.6.1"
+    def activity_version = "1.9.2"
     implementation "androidx.activity:activity-ktx:$activity_version"
 }
