@@ -51,7 +51,7 @@ android {
 }
 
 dependencies {
-    implementation ' com.lazygeniouz:dfc:1.0.8'
+    implementation 'com.lazygeniouz:dfc:1.0.8'
 
     def activity_version = "1.9.2"
     implementation "androidx.activity:activity-ktx:$activity_version"

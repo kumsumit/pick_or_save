@@ -4,7 +4,7 @@ import android.app.Activity
 import android.database.Cursor
 import android.provider.OpenableColumns
 import android.util.Log
-import androidx.documentfile.provider.DocumentFile
+import com.lazygeniouz.dfc.file.DocumentFileCompat
 import com.deepanshuchaudhary.pick_or_save.PickOrSavePlugin.Companion.LOG_TAG
 import io.flutter.plugin.common.MethodChannel
 import java.io.File
@@ -88,14 +88,14 @@ fun fileMetadataFromPathOrUri(
 
                 val lastModified: String
 
-                val documentFile = DocumentFile.fromSingleUri(context, sourceFileUri)
+                val documentFile = DocumentFileCompat.fromSingleUri(context, sourceFileUri)
 
                 lastModified = if (documentFile != null) {
-                    if (documentFile.lastModified() != 0.toLong()) {
+                    if (documentFile.lastModified != 0.toLong()) {
                         SimpleDateFormat(
                             "yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.ENGLISH
                         ).format(
-                            Date(documentFile.lastModified())
+                            Date(documentFile.lastModified)
                         )
                     } else {
                         "Unknown"
